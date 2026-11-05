@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" href="../source/favicon.png"/>
+  </head>
+  <body>
+    <nav class="nav-island">
+      <a href="./zespol_wsparcia.html" style="color: white">Zespół wsparcia</a>
+      <a href="./projekty.html" style="color: white">Projekty</a>
+      <a href="../index.html" style="color: white">Strona główna</a>
+    </nav>
+    
+    <main class="contact-section">
+      <h1 class="page-title">Kontakt</h1>
+
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h2>Skontaktuj się ze mną</h2>
+          <p>Masz pytanie, pomysł na projekt lub propozycje współpracy? Skontaktuj się ze mną!</p>
+          <div class="contact-image">
+            <img src="../source/co-workers.svg" alt="zdjecie współpracowników" />
+          </div>
+        </div>
+    
+        <form id="contactForm" class="contact-card">
+          <label for="name">Imię:</label>
+          <input type="text" id="name" name="name" required placeholder="Twoje imię" />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="email@example.com" />
+
+          <label for="type">Wybierz powód kontaktu:</label>
+          <select id="type" name="type" required>
+            <option value="">--Wybierz--</option>
+            <option value="pytanie">Pytanie</option>
+            <option value="propozycja">Propozycja</option>
+            <option value="skarga">Skarga</option>
+            <option value="wspolpraca">Współpraca</option>
+          </select>
+
+          <label for="message">Wiadomość:</label>
+          <textarea id="message" name="message" required rows="4" placeholder="Przykładowa wiadomość"></textarea>
+
+          <button type="submit">Wyślij</button>
+        </form>
+      </div>
+    </main>
+  <footer>
+    <p >Autor: Mariusz Hałek</p>
+  </footer>
+  <script src="../index.js"></script>
+  <script src="../script.js"></script>
+  </body>
+
+</html>
