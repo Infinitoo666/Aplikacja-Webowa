@@ -438,6 +438,8 @@ button {
   border-radius: 8px;
   font-size: 15px;
   font-weight: 500;
+  align-items: center;
+  display: inline-flex;
 }
 
 .skill-item img {
